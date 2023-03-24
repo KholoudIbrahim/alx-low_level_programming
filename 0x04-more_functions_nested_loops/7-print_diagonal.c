@@ -6,21 +6,26 @@
  * @n: is the number of times that character \
  * has to be printed
 */
-
 void print_diagonal(int n)
 {
-	int postn, space;
-
 	if (n <= 0)
-		putchar('\n');
-	else
 	{
-		for (postn = 1; postn <= n; postn++)
+		_putchar('\n');
+	} else
+	{
+		int i, j;
+
+		for (i = 0; i < n; i++)
 		{
-			for (space = 1; space <= postn; space++)
-				_putchar(' ');
-			_putchar(92);
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
+			}
 			_putchar('\n');
 		}
 	}
 }
+
