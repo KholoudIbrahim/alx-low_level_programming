@@ -3,7 +3,7 @@
 /**
  * factorial - des function
  * @n: int
- * Return: value int 
+ * Return: value int
  */
 
 int factorial(int n)
