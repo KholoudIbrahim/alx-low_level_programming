@@ -10,4 +10,4 @@ main:
 	ret
 
 ;m
-m: db 'Hello, Holberton\n', 0
+m: db 'Hello, Holberton', 0
