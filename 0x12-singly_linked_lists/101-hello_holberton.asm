@@ -9,5 +9,5 @@ main:
 	mov		eax, 0
 	ret
 
-;m
-m: db 'Hello, Holberton', 0
+section		.data
+	m db 'Hello, Holberton', 0xa, 0
