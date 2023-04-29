@@ -28,7 +28,7 @@ void int_i(char *sep, va_list pr)
  * @ap: the ptr
  */
 
-void format_float(char *sep, va_list pr)
+void format_f(char *sep, va_list pr)
 {
 	printf("%s%f", sep, va_arg(pr, double));
 }
