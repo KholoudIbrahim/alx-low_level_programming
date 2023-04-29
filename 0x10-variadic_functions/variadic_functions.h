@@ -4,8 +4,9 @@
 #include <stdio.h>
 /**
  * struct tk - struct tk
+ *
  * @tk: format
- * @f: The function
+ * @f: The func
  */
 typedef struct tk
 {

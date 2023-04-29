@@ -25,10 +25,10 @@ void int_i(char *sep, va_list pr)
 /**
  * float_f - float
  * @sep: the string
- * @ap: the ptr
+ * @pr: the ptr
  */
 
-void format_f(char *sep, va_list pr)
+void float_f(char *sep, va_list pr)
 {
 	printf("%s%f", sep, va_arg(pr, double));
 }
