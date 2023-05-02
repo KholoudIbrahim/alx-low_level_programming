@@ -3,7 +3,7 @@
 /**
  * main - prints a program name, followed by a new line.
  * @argc: integer value
- * @argv: list 
+ * @argv: list
  *
  * Return: always 0.
  */
