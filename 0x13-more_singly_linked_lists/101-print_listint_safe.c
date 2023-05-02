@@ -7,13 +7,13 @@
  *
  * @l1: old list
  * @s_l: size of the new linked list
- * @n: new node
+ * @new: new node
  *
  * Return: (l2)
  */
 
 const listint_t **r_memory(const listint_t **l1, size_t s_l,
-		const listint_t *n)
+		const listint_t *new)
 {
 	size_t j;
 	const listint_t **l2;
@@ -28,7 +28,7 @@ const listint_t **r_memory(const listint_t **l1, size_t s_l,
 	for (j = 0; j < s_l - 1; j++)
 		l2[j] = l1[j];
 
-	l2[j] = n;
+	l2[j] = new;
 	free(l1);
 
 	/*return (l2)*/
