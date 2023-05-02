@@ -15,8 +15,9 @@ const listint_t **r_memory(const listint_t **l1, size_t s_l,
 		const listint_t *n)
 {
 	size_t j;
-	const listint_t **l2 = malloc(size * sizeof(listint_t *));
+	const listint_t **l2;
 
+	l2 = malloc(size * sizeof(listint_t *));
 	if (l2 == NULL)
 	{
 		free(l1);
