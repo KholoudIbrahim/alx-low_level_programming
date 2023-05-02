@@ -5,24 +5,24 @@
  *
  * @head: address of ptr
  *
- * Return: (i)
+ * Return: (n)
  */
 
 int pop_listint(listint_t **head)
 {
 	listint_t *n1;
-	int i;
+	int n;
 
 	if (!head || !*head)
 		return (0);
 
 	n1 = (*head)->next;
-	i = (*head)->i;
+	n = (*head)->n;
 
 	/*free(*head)*/
 	free(*head);
 	*head = n1;
 
-	/*return (i)*/
-	return (i);
+	/*return (n)*/
+	return (n);
 }
