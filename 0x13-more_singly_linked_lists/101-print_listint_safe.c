@@ -1,6 +1,7 @@
+#include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "lists.h"
+
 /**
  * r_memory - returns a new linked list
  *
