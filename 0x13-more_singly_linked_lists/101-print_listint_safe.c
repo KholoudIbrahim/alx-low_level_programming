@@ -6,14 +6,14 @@
  * r_memory - returns a new linked list
  *
  * @l1: old list
- * @s_l: size of the new linked list
- * @new: new node
+ * @size: size of the new linked list
+ * @n: new node
  *
  * Return: (l2)
  */
 
-const listint_t **r_memory(const listint_t **l1, size_t s_l,
-		const listint_t *new)
+const listint_t **r_memory(const listint_t **l1, size_t size,
+		const listint_t *n)
 {
 	size_t j;
 	const listint_t **l2;
@@ -25,10 +25,10 @@ const listint_t **r_memory(const listint_t **l1, size_t s_l,
 		exit(98);
 	}
 
-	for (j = 0; j < s_l - 1; j++)
+	for (j = 0; j < size - 1; j++)
 		l2[j] = l1[j];
 
-	l2[j] = new;
+	l2[j] = n;
 	free(l1);
 
 	/*return (l2)*/
