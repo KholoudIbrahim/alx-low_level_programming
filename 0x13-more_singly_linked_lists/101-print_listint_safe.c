@@ -38,35 +38,32 @@ const listint_t **r_memory(const listint_t **l1, size_t s_l,
  *
  * @head: ptr
  *
- * Return: (m)
+ * Return: (v)
  */
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t **li = NULL;
-	size_t m = 0, j;
+	size_t j, v = 0;
+	const listint_t **l = NULL;
 
 	while (head != NULL)
 	{
-		for (j = 0; j < m; j++)
+		for (j = 0; j < v; j++)
 		{
-			if (head == li[j])
+			if (head == l[j])
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
-				free(li);
-				/*return (m)*/
-				return (m);
+				free(l);
+				/*return (v)*/
+				return (v);
 			}
 		}
-
-		m++;
-		li = r_memory(li, m, head);
-
+		v++;
+		l = r_memory(l, v, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
-
-	free(li);
-	/*return (m)*/
-	return (m);
+	free(l);
+	/*return (v)*/
+	return (v);
 }
