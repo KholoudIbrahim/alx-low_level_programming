@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_listint - prints all the elements of the linked lists.
+ * print_listint - prints all the elements of the linked lists
  *
- * @h: ptr.
+ * @h: ptr
  *
- * Return: (n).
+ * Return: (n)
  */
 
 size_t print_listint(const listint_t *h)
