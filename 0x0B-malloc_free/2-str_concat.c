@@ -2,19 +2,18 @@
 
 /**
  * len - the length
- * @s: input (string)
- * Return: (si)
+ * @n: input (string)
+ * Return: (size)
  */
 
-
-int len(char *s)
+int len(char *n)
 {
-	int si = 0;
+	int size = 0;
 
-	for (; s[si] != '\0'; si++)
+	for (; n[size] != '\0'; size++)
 	;
-/*return (si)*/
-	return (si);
+	/*return (si)*/
+	return (size);
 }
 /**
  * *str_concat - it concatenates two strings
