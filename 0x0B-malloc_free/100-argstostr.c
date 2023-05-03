@@ -20,14 +20,14 @@ int len(char *p)
  * *argstostr - concatenates all the arguments
  * @ac: ac
  * @av: av
- * Return: (m)
+ * Return: (s)
  */
 
 char *argstostr(int ac, char **av)
 {
 	int j1 = 0, n = 0;
 	int j2 = 0, cm = 0;
-	char *m;
+	char *s;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -35,19 +35,19 @@ char *argstostr(int ac, char **av)
 	for (; j1 < ac; j1++, n++)
 		n = n + _strlen(av[j1]);
 
-	m = malloc(sizeof(char) * n + 1);
-	if (m == 0)
+	s = malloc(sizeof(char) * n + 1);
+	if (s == 0)
 		return (NULL);
 
 	for (j1 = 0; j1 < ac; j1++)
 	{
 		for (j2 = 0; av[j1][j2] != '\0'; j2++, cm++)
-			m[cm] = av[j1][j2];
+			s[cm] = av[j1][j2];
 
-		m[cm] = '\n';
+		s[cm] = '\n';
 		cm++;
 	}
-	m[cm] = '\0';
+	s[cm] = '\0';
 	/*return (m)*/
 	return (m);
 }
