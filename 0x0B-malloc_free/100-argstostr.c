@@ -48,6 +48,6 @@ char *argstostr(int ac, char **av)
 		cm++;
 	}
 	s[cm] = '\0';
-	/*return (m)*/
-	return (m);
+	/*return (s)*/
+	return (s);
 }
