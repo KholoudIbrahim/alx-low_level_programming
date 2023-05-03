@@ -32,10 +32,10 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (; j1 < ac; j1++, nc++)
-		nc += _strlen(av[j1]);
+	for (; j1 < ac; j1++, n++)
+		n = n + _strlen(av[j1]);
 
-	m = malloc(sizeof(char) * nc + 1);
+	m = malloc(sizeof(char) * n + 1);
 	if (m == 0)
 		return (NULL);
 
